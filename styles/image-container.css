@@ -1,0 +1,84 @@
+@font-face {
+    font-family: odin-font;
+    src: url("../fonts/Norse-Bold.otf");
+}
+
+
+:root{
+    --logo-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 10%;
+}
+
+.flex {
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0, 0, 0,0.6);
+    color: var(--logo-color);
+    position: relative;
+    top: 20%;
+    padding: 5px 0;
+}
+
+.logo-img {
+    width: 80px;
+    height: 90%;
+    object-fit: contain;
+}
+
+.logo-name {
+    font-family: odin-font, sans-serif;
+    font-size: 70px;
+    position: relative;
+    top: 3px;
+}
+
+.odin-image {
+    width: 35%;
+    background-image: url("../images/image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.img-owner {
+    width: 100%;
+    color: var(--logo-color);
+    font-size: 1rem;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+.owner-link {
+    color: rgba(255, 255, 255, 0.891);
+}
+
+.owner-link:active{
+    color: var(--logo-color);
+}
+
+.form-container {
+    width: 55%;
+    flex: 1;
+}
